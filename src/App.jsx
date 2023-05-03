@@ -1,6 +1,6 @@
 import { React, useState } from "react";
-import CurrencySwitcher from "./compoent/currencySwitcher";
-import Display from "./compoent/display";
+import CurrencySwitcher from "./Components/CurrencySwitcher"
+import Display from "./Components/Display"
 import "./App.css";
 function App() {
   const [currency, setCurrency] = useState("EUR");
