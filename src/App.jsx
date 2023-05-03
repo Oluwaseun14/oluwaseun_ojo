@@ -1,15 +1,17 @@
 import { React, useState } from "react";
-import CurrencySwitcher from "./Components/CurrencySwitcher";
-import Display from "./Components/Display";
-
+import CurrencySwitcher from "./compoent/currencySwitcher";
+import Display from "./compoent/display";
 import "./App.css";
 
 function App() {
   const [currency, setCurrency] = useState("EUR");
-
   const handleCurrencyChange = () => {
-    //TODO: using traditional if else statement determine the new currency
-    setCurrency(currency === "EUR" ? "USD" : "EUR");
+    if (currency === "EUR") {
+      setCurrency("USD");
+    } else {
+      setCurrency;
+    }
+    ("EUR");
   };
 
   return (
@@ -24,5 +26,3 @@ function App() {
 }
 
 export default App;
-
-
